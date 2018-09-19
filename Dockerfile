@@ -1,5 +1,5 @@
-FROM perl:latest
-LABEL version="1.1" maintainer="JJ Merelo <jjmerelo@GMail.com>" perl5version="5.28"
+FROM perl:slim
+LABEL version="1.2" maintainer="JJ Merelo <jjmerelo@GMail.com>" perl5version="5.28"
 
 # Set up dir and download modules
 RUN mkdir /test && cpanm Test::More Test::Harness Git File::Slurper JSON Net::Ping TAP::Formatter::Color Term::ANSIColor LWP::Simple
