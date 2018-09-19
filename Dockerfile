@@ -8,7 +8,7 @@ VOLUME /test
 WORKDIR /test
 
 # Will run this
-ENTRYPOINT PERL5LIB=$PERL5LIB:/usr/lib prove -c
+ENTRYPOINT prove -I/usr/lib -c
 
 
 
