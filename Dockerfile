@@ -1,5 +1,5 @@
 FROM perl:slim
-LABEL version="1.2" maintainer="JJ Merelo <jjmerelo@GMail.com>" perl5version="5.28"
+LABEL version="1.3" maintainer="JJ Merelo <jjmerelo@GMail.com>" perl5version="5.28"
 
 # Set up dir and download modules
 RUN chmod o+r /etc/resolv.conf
