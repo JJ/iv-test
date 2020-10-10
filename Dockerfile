@@ -1,5 +1,5 @@
 FROM perl:5.32-slim-threaded
-LABEL version="1.4" maintainer="JJ Merelo <jjmerelo@GMail.com>" perl5version="5.28"
+LABEL version="1.5" maintainer="JJ Merelo <jjmerelo@GMail.com>" perl5version="5.28"
 
 # Set up dir and download modules
 RUN chmod o+r /etc/resolv.conf
