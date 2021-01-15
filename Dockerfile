@@ -6,7 +6,7 @@ RUN chmod o+r /etc/resolv.conf \
     && mkdir /test && apt-get update \
     && apt-get install -y git curl gcc libssl-dev zlib1g-dev   \
     && cpanm Net::SSLeay --verbose --notest \
-    && cpanm IO::Socket::SSL Test::More Test::Harness Git File::Slurper JSON TAP::Formatter::Color Term::ANSIColor Mojo::UserAgent Net::Ping YAML
+    && cpanm IO::Socket::SSL Test::More Test::Harness Git File::Slurper JSON TAP::Formatter::Color Term::ANSIColor Mojo::UserAgent Net::Ping YAML JSON::XS Scalar::Util
 RUN perl --version
 VOLUME /test
 WORKDIR /test
