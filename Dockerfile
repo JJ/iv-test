@@ -13,6 +13,3 @@ WORKDIR /test
 
 # Will run this
 ENTRYPOINT prove -I/usr/lib -c
-
-
-
